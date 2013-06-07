@@ -1,0 +1,9 @@
+Serving Keystone with Apache+mod_wsgi
+=====================================
+
+This is just a small example of how to serve Keystone with Apache+mod_wsgi
+
+Using Debian Wheezy & Openstack Grizzly
+
+Copyright 2013 eNovance <licensing@enovance.com>
+Author François Charlier <fcharlier@enovance.com>
