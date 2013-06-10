@@ -5,5 +5,11 @@ This is just a small example of how to serve Keystone with Apache+mod_wsgi
 
 Using Debian Wheezy & Openstack Grizzly
 
+Copyright
+=========
+
 Copyright 2013 eNovance <licensing@enovance.com>
-Author François Charlier <fcharlier@enovance.com>
+
+Authors:
+  François Charlier <fcharlier@enovance.com>
+  Thomas Goirand <zigo@debian.org>
