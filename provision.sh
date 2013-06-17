@@ -3,7 +3,7 @@
 set -x
 
 export DEBIAN_FRONTEND=noninteractive
-export APTGET="apt-get -o Dpkg::Options::=--force-confnew --force-yes -fuy" 
+export APTGET="apt-get -o Dpkg::Options::=--force-confnew --force-yes -fuy"
 export KEYSTONE_AUTH_TOKEN=moumou
 export KEYSTONE_ADM_PASS=secret
 export KEYSTONE_ENDPOINT_IP=127.0.0.1
@@ -192,8 +192,8 @@ test_keystone () {
 
     stop_all
     service ${TEST_NAME} start
-    sleep 5
-    ab -n 1000 -c 20 -p /root/auth.json -T "application/json" http://localhost:5000/v2.0/tokens | tee /tmp/testresult_${TEST_NAME}
+    sleep 10
+    ab -n 1000 -c 20 -p /root/auth.json -T "application/json" http://127.0.0.1:5000/v2.0/tokens | tee /tmp/testresult_${TEST_NAME}
 }
 
 gplhost_sources
